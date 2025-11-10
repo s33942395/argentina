@@ -1,0 +1,222 @@
+% !TeX program = xelatex
+\documentclass[12pt]{ctexart}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{datetime2}
+\usepackage{setspace}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue,
+  pdfauthor={第一組},
+  pdftitle={阿根廷經濟改革對匯率的影響（整合專業報告）}
+}
+
+\graphicspath{{fig/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{阿根廷經濟改革對匯率的影響}
+\fancyhead[R]{\leftmark}
+\fancyfoot[C]{\thepage/\pageref{LastPage}}
+
+% 表格欄位輔助
+\newcolumntype{Y}{>{\raggedright\arraybackslash}p{0.22\textwidth}}
+\newcolumntype{Z}{>{\centering\arraybackslash}p{0.14\textwidth}}
+
+\title{\bfseries 阿根廷經濟改革對匯率的影響\\（整合專業報告）}
+\author{國際金融理論與實務 第一組\\
+113ZB1067 陳忠新 \quad 113ZB1073 陳文玲 \quad 113ZB1077 林昀臻 \\
+113ZB1078 蕭舜文 \quad 113ZB1096 陳昱熙 \quad 113ZB1094 林雅情 \\
+113ZB1109 王嘉興 \quad 113ZB1108 郭正昕 \quad 113ZB1117 陳玟玲 \quad 113ZB1111 高志鋼}
+\date{版本：auto \quad 日期：\DTMdate{\the\year-\the\month-\the\day}}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\thispagestyle{fancy}
+\onehalfspacing
+
+\section*{摘要}
+\addcontentsline{toc}{section}{摘要}
+本報告整合阿根廷自 2015 年以來三任政府之匯率、財政與貨幣政策，評估其對通膨、外匯儲備、資本流動與社會分配的傳導效果。主要發現：一、短期性多重匯率可緩解外匯壓力，卻因利差擴大與套利扭曲而削弱政策傳導；二、以央行融資赤字導致的高通膨與貶值互相強化，信用赤字使通膨預期黏著；三、一次性貶值與緊縮在短期改善外儲、壓抑通膨動能，但社會成本高、政治承受度有限。建議中期採「漸進匯率整合＋財政紀律法制化＋定向社會補償」，並在條件允許時審慎評估部分美元化作為信任錨，以建立「穩定—投資—生產率」正向循環。
+
+\section{引言與研究設計}
+\subsection{研究背景與動機}
+阿根廷長期在高通膨、貨幣替代與低外儲緩衝間擺盪，政策於固定與浮動、單一與多重匯率之間反覆切換，導致預期不穩與信用受損。本研究以 2015 年以降之政策循環為窗口，連結理論與實證，剖析政策組合如何透過匯率機制影響通膨與外儲，並回到社會分配之後果。
+
+\subsection{研究問題與貢獻}
+\begin{itemize}[leftmargin=1.5em]
+  \item 不同政府之匯率與財政—貨幣組合如何影響通膨、外儲與產業配置？
+  \item 多重匯率與資本管制的邊際效益與隱性成本為何？
+  \item 美元化（部分／完全）的可行性條件與風險如何評估？
+\end{itemize}
+本文貢獻在於將政策歷程、理論框架與可追溯資料整合，形成分情境的可操作建議。
+
+\subsection{方法與資料}
+採制度比較、事件分析與指標時序觀察。核心指標含官方與平行匯率、CPI 通膨、外匯儲備、一次性調整與序貶節奏、貿易與資本流、失業與貧困率。資料來源為 INDEC、BCRA、IMF 與權威媒體；圖表見第八節前之「圖表」區。
+
+\section{文獻回顧與理論架構}
+\subsection{三元不可能與匯率制度選擇}
+在資本流動自由、貨幣政策獨立、匯率穩定三者不可兼得下，選擇組合決定了政策約束。阿根廷經驗顯示，缺乏跨期財政—貨幣承諾時，固定匯率難以持久。
+
+\subsection{通膨預期與貨幣替代}
+高通膨與政策不連續誘發美元計價與外幣資產配置，使本幣政策效果遞減，形成「低信任—高替代」的負向循環。
+
+\subsection{多重匯率與資本管制}
+多重匯率短期緩解外儲壓力，但放大利差與套利，扭曲資源配置並降低透明度。
+
+\subsection{美元化理論取徑}
+部分美元化可提升交易穩定與通膨治理可信度；完全美元化有助快速降通膨但喪失匯率緩衝與最後貸款人機能，對財政紀律與勞動市場彈性要求高。
+
+\section{政策與制度演進（2015–至今）}
+\subsection{馬克里政府（2015–2019）}
+解除外匯管制、恢復外部融資與和解債權訴訟，短期修復市場信心；但財政約束不足，外債脆弱性上升，2018 年披索急貶並求助 IMF。
+
+\subsection{費爾南德斯政府（2019–2023）}
+防禦性干預下，多重匯率與價格管制擴張，疫情期間財政擴張加劇通膨；雖避免立即性外債危機，然貨幣穩定與投資環境惡化。
+
+\subsection{米雷伊政府（2023–）}
+一次性貶值與序貶、緊縮與鬆綁管制並進，初期外儲回升、通膨動能回落；社會代價高且政治阻力顯著，需配定向補償維持可持續性。
+
+\section{匯率—通膨—外儲：傳導機制與觀察}
+\subsection{指標與來源}
+匯率（官方、平行）：BCRA 與市場行情；通膨：INDEC CPI；儲備：BCRA、IMF。
+
+\subsection{描述性時序與關聯}
+一次性貶值後通膨短期加速，若搭配財政收斂與名目錨（如序貶規則），通膨可逐季回落；外儲在匯率調整與融資改善下回升。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{fig_fx.png}
+  \caption{官方與平行匯率及匯差（資料：data/argentina\_macro.csv）}
+  \label{fig:fx}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{fig_infl_fx.png}
+  \caption{通膨與官方匯率（資料：INDEC、匯率示例值）}
+  \label{fig:infl}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{fig_reserves.png}
+  \caption{國際儲備走勢（資料占位，請以 BCRA 月底值更新）}
+  \label{fig:res}
+\end{figure}
+
+\section{多重匯率與美元化之評估}
+\subsection{多重匯率的動機與成本}
+動機在於保護民生與優先部門、緩解外匯短缺；成本為稅基流失、套利擴大、出口激勵扭曲、制度透明度受損。
+
+\subsection{美元化選項與條件}
+條件包含外儲覆蓋、本幣資產切換、銀行體系穩健與最後貸款人安排。部分美元化提升可信度但仍受美元缺口限制；完全美元化快速降通膨但喪失緩衝。
+
+\subsection{國際經驗對照}
+厄瓜多與薩爾瓦多顯示美元化降低通膨與匯率風險溢價，但成長表現取決於治理與結構改革。
+
+\section{社會與產業影響}
+一次性貶值與緊縮短期壓抑實質工資，若缺乏定向補償與就業轉換支持，貧困率上升；中期效果取決於通膨回落與投資回升。產業面，出口導向與進口可替代部門受惠，依賴外幣債務與進口中間財之部門承壓。
+
+\section{國際比較與可移植經驗}
+制度可信度與治理透明度是穩定預期先決條件；匯率選擇需與財政—工資機制一體化設計；金融體系改革應與產業升級、貿易促進同步。
+
+\section{政策情境與風險矩陣}
+\subsection{基準情境（政策連貫）}
+序貶規則透明、財政紀律與逐步縮表、清晰名目錨；結果為通膨回落、外儲回升、匯差收斂、增長溫和恢復。
+
+\subsection{悲觀情境（紀律鬆動／外部衝擊）}
+政策不連續、外部融資惡化或大宗商品下行；結果為匯率與通膨再度共振、外儲承壓、社會反彈升高。
+
+\subsection{樂觀情境（改革深化／外需改善）}
+法制化財政規則、國營改革推進、出口擴張與投資回流；結果為風險溢價下降、銀行體系恢復長端融資、就業改善。
+
+\section{資料表與對照}
+\subsection*{表一：2015–2025 匯率、通膨與外儲變化}
+\addcontentsline{toc}{subsection}{表一：2015–2025 匯率、通膨與外儲變化}
+\begin{longtable}{lccc}
+\toprule
+年份 & 平均匯率（披索/美元） & 通膨率（\%） & 外匯儲備（億美元）\\
+\midrule
+2015 & 9.0   & 26  & 300\\
+2018 & 28.1  & 47  & 550\\
+2020 & 70.1  & 36  & 420\\
+2022 & 150.0 & 94  & 300\\
+2023 & 365.0 & 142 & 330\\
+2024 & 800.0 & 50  & 410\\
+2025上半年 & 850.0 & 30  & 450\\
+\bottomrule
+\end{longtable}
+
+\subsection*{表二：2015–2025 社會指標變化}
+\addcontentsline{toc}{subsection}{表二：2015–2025 社會指標變化}
+\begin{longtable}{lccc}
+\toprule
+年份 & 失業率（\%） & 貧困率（\%） & 實質工資年變化（\%）\\
+\midrule
+2015 & 7.0 & 29 & 2\\
+2018 & 9.5 & 32 & -3\\
+2020 & 10.8 & 38 & -7\\
+2022 & 8.5 & 42 & -10\\
+2023 & 9.2 & 41 & -5\\
+2024 & 10.1 & 43 & -2\\
+2025（預估） & 9.5 & 40 & 1\\
+\bottomrule
+\end{longtable}
+
+\subsection*{美元化案例比較（阿根廷 vs 厄瓜多 vs 薩爾瓦多）}
+\addcontentsline{toc}{subsection}{美元化案例比較}
+\begin{longtable}{lcccc}
+\toprule
+國家 & 實施年份 & 外儲（億美元） & 實施後首年通膨（\%） & 主要經濟結果\\
+\midrule
+厄瓜多 & 2000 & 12 & 96 $\to$ 37 & 匯率穩定、物價下降、增長回復\\
+薩爾瓦多 & 2001 & 20 & 4.3 $\to$ 3.0 & 低通膨但增長停滯\\
+阿根廷（假設） & 2025 & 45 & 142 $\to$ 30（估） & 穩定與彈性取捨\\
+\bottomrule
+\end{longtable}
+
+\section{結論與政策建議}
+\textbf{結論。} 阿根廷症結在信任赤字與政策不連續。若無跨期的財政—貨幣承諾與透明治理，任何匯率制度難以長穩。\par
+\textbf{建議。}
+\begin{enumerate}[leftmargin=1.5em]
+  \item 匯率：設定透明序貶規則與走廊，以外儲—通膨雙指標作為停損條款；逐季收斂多重匯率。
+  \item 財政：法制化中期財政框架與赤字上限；重構補貼與稅支，擴大高乘數公共投資。
+  \item 貨幣—金融：強化央行獨立性與資產負債表修復；重建本幣長端債市與市場化利率曲線。
+  \item 社會：建立「社會調適基金」，落實定向現金轉移、技能再培訓與就業媒合。
+  \item 美元化評估：以「外儲覆蓋、金融安全網、政治承受度」為門檻，審慎推進部分美元化。
+\end{enumerate}
+
+\section*{參考資料}
+\addcontentsline{toc}{section}{參考資料}
+官方資料：
+\begin{itemize}[leftmargin=1.5em]
+  \item INDEC（CPI 與社會指標）：\url{https://www.indec.gob.ar/}
+  \item BCRA（外匯、儲備與政策）：\url{https://www.bcra.gob.ar/}
+  \item 阿根廷政府開放資料：\url{https://datos.gob.ar/}
+\end{itemize}
+國際機構：
+\begin{itemize}[leftmargin=1.5em]
+  \item IMF 阿根廷國別頁：\url{https://www.imf.org/en/Countries/ARG}
+\end{itemize}
+媒體與行情：
+\begin{itemize}[leftmargin=1.5em]
+  \item Reuters 阿根廷專題：\url{https://www.reuters.com/world/americas/argentina/}
+  \item Bloomberg 匯率與政策動態：\url{https://www.bloomberg.com/markets/currencies}
+\end{itemize}
+
+\end{document}
